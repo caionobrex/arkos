@@ -6,7 +6,7 @@ export default NextAuth({
     Providers.Credentials({
       name: 'Credentials',
       authorize: async (credentials, _req) => {
-        const res = await fetch(`${process.env.VERCEL_URL}/api/auth/login`, {
+        const res = await fetch(`https://arkos-caionobrex.vercel.app/api/auth/login`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(credentials)
