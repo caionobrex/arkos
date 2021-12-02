@@ -128,7 +128,7 @@ export default function Products() {
         <Container>
           <SearchBox />
           <h1 className="text-3xl font-medium my-12 text-gray-800">Produtos</h1>
-          <ul className="grid md:grid-cols-4 gap-x-3 gap-y-4">
+          <ul className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-3 gap-y-4">
             {products.map((product) => (
               <li key={product.id}>
                 <ProductCard
