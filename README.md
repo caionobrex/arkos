@@ -5,6 +5,8 @@ editar quantidade dos produtos no carrinho e editar algumas informações do seu
 
 Ela foi desenvolvida usando NextJs/MongoDB/NextAuth/TailWindCss.
 
+![PageSpeed Test](https://i.imgur.com/PAHhGJ2.png)
+
 ## Adicionais
 
 Foi adicionado um Dashboard com gráficos de estatísticas(usando ChartJs library) de vendas.
