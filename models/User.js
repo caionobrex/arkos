@@ -24,4 +24,4 @@ userSchema.methods.checkPass = function (password) {
   return this.hash === hash
 }
 
-export default mongoose.models.User || mongoose.model('User', userSchema)
+export default mongoose.models.User || mongoose.model('User', userSchema, 'users2')
