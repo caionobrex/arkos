@@ -3,7 +3,7 @@ A Arkos Food é um e-commerce de comida onde o usuário é capaz
 de realizar um cadastro, realizar login, adicionar items ao seu carrinho de compra,
 editar quantidade dos produtos no carrinho e editar algumas informações do seu perfil.
 
-Ela foi desenvolvida usando NextJs/MongoDB/NextAuth.
+Ela foi desenvolvida usando NextJs/MongoDB/NextAuth/TailWindCss.
 
 ## Adicionais
 
