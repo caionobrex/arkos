@@ -1,6 +1,6 @@
 module.exports = {
   env: {
-    mongoURI: 'mongodb://localhost/forkos'
+    mongoURI: process.env.mongoURI
   },
   reactStrictMode: true,
 }
