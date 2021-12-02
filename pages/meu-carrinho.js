@@ -23,7 +23,7 @@ const CartItem = ({ item, updateQty, removeItem }) => {
     <div className="relative flex flex-col gap-y-4 items-center gap-x-6 md:flex-row">
     
       <div className="h-60 w-full md:w-40 md:h-40 bg-blue-200 rounded-2xl">
-        <img src={item.image} className="w-full h-full object-cover rounded-t-2xl md:rounded-t-none md:rounded-l-2xl" />
+        <img src={item.image} alt={item.title} className="w-full h-full object-cover rounded-t-2xl md:rounded-t-none md:rounded-l-2xl" />
       </div>
       
       <div className="flex flex-col gap-y-2 p-3 mb-5 md:p-0 md:w-96">

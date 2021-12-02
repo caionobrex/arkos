@@ -85,7 +85,7 @@ const ProductCard = ({ product, onClick }) => {
   return (
     <div className="border rounded-xl shadow-md">
       <div className="h-60">
-        <img src={product.image} className="w-full h-full object-cover rounded-t-xl" />
+        <img src={product.image} className="w-full h-full object-cover rounded-t-xl" alt={product.title} />
       </div>
       <div className="p-4">
         <h1 className="text-lg font-medium truncated-1-line">{product.title}</h1>

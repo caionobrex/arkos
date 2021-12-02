@@ -132,7 +132,7 @@ export default function LoginPage() {
       <div className="flex flex-col md:flex-row min-h-screen">
         <div className="col bg-blue-100 flex justify-center flex-col relative overflow-hidden p-8 md:px-20">
           <div className="md:absolute left-15 top-4">
-            <Image src={Logo} />
+            <Image src={Logo} alt="Arkos Food Logo" />
           </div>
           <Image src={LoginPageImg} />
         </div>
