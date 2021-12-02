@@ -19,7 +19,7 @@ const variants = {
 
 const CartIcon = ({ items }) => (
   <Link href="/meu-carrinho">
-    <a href="/meu-carrinho" className="relative">
+    <a className="relative">
       <BsCart className="text-2xl text-gray-600 cursor-pointer" />
       <span className="absolute -top-4 -right-2 w-5 h-5 bg-red-500 rounded-full flex justify-center items-center text-white text-sm">
         {items.length}
@@ -93,7 +93,7 @@ export default function Header() {
       <Container>
         <div className="flex flex-col items-center gap-y-3 md:flex-row justify-between py-2">
           <Link href="/produtos">
-            <a href="/produtos">
+            <a>
               <Image src="/imgs/logo.svg" width="210px" height="77px" />
             </a>
           </Link>

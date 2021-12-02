@@ -83,7 +83,7 @@ export default function MyCart() {
       <main className="pb-8">
         <Container>
           <div className="pt-6 md:pt-3">
-            <Link href="/produtos"><a href="/produtos" className="text-red-500 transition-all hover:text-red-300">Pagina Inicial</a></Link> > <span>Meu Carrinho</span>
+            <Link href="/produtos"><a className="text-red-500 transition-all hover:text-red-300">Pagina Inicial</a></Link> > <span>Meu Carrinho</span>
           </div>
           
           {items.length == 0 && (

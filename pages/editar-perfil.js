@@ -127,7 +127,7 @@ export default function EditProfile() {
       <Header />
       <Container>
         <div className="pt-6 md:pt-3">
-          <Link href="/produtos"><a href="/produtos" className="text-red-500 transition-all hover:text-red-300">Pagina Inicial</a></Link> > <span>Editar Perfil</span>
+          <Link href="/produtos"><a className="text-red-500 transition-all hover:text-red-300">Pagina Inicial</a></Link> > <span>Editar Perfil</span>
         </div>
         <div className="flex justify-center pt-4 pb-8 md:pt-2">
           <EditProfileCard
