@@ -10,7 +10,7 @@ export function UserProvider({ children }) {
   const signIn = (user) => setUser(user)
 
   const signOut = () => {
-    logOut({ callbackUrl: 'http://localhost:3000/produtos' })
+    logOut({ callbackUrl: process.env.NEXTAUTH_URL })
     setUser(null)
   }
 
