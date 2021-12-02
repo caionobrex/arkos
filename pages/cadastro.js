@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import InputField from '../components/InputField'
+import InputField from '../components/inputField'
 import Logo from '../public/imgs/logo.svg'
 import RegisterPageImg from '../public/register-page-img.svg'
 import { Formik } from 'formik'
