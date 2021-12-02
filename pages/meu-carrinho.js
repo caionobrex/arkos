@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '../components/header'
 import Container from '../components/container'
+import Rating from '../components/rating'
 import Image from 'next/image'
 import Link from 'next/link'
 import {
@@ -34,14 +35,7 @@ const CartItem = ({ item, updateQty, removeItem }) => {
             {item.qty > 1 && <AiOutlineMinus className="text-2xl text-red-500 cursor-pointer" onClick={decreaseQty} />}
           </div>
         </div>
-        <ul className="flex items-center gap-x-1">
-          <li><AiFillStar className="text-yellow-300" /></li>
-          <li><AiFillStar className="text-yellow-300" /></li>
-          <li><AiFillStar className="text-yellow-300" /></li>
-          <li><AiFillStar className="text-yellow-300" /></li>
-          <li><AiFillStar className="text-yellow-300" /></li>
-          <li className="text-gray-300 ml-2">({item.rating.count})</li>
-        </ul>
+		<Rating rating={item.rating} />
         <p>{item.description}</p>
       </div>
       
