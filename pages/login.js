@@ -129,15 +129,15 @@ export default function LoginPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <div className="flex flex-col md:flex-row min-h-screen">
+      <div className="flex flex-col lg:flex-row min-h-screen">
         <div className="col bg-blue-100 flex justify-center flex-col relative overflow-hidden p-8 md:px-20">
-          <div className="md:absolute left-15 top-4">
+          <div className="lg:absolute left-15 top-4">
             <Image src={Logo} alt="Arkos Food Logo" />
           </div>
           <Image src={LoginPageImg} />
         </div>
       
-        <div className="col flex items-center px-4 md:px-16 2xl:px-52 w-full py-16">
+        <div className="col flex items-center px-4 md:px-28 lg:px-16 2xl:px-52 w-full py-16">
           <LoginCard
             validate={validate}
             onSubmitHandler={onSubmitHandler}
