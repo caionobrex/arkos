@@ -56,7 +56,7 @@ const EditProfileCard = ({ user, validate, onSubmitHandler }) => (
             <InputField
               type="email"
               name="newEmail"
-              label="Email"
+              label="Novo Email"
               errors={errors}
               touched={touched}
               value={values.newEmail}
@@ -78,7 +78,7 @@ const EditProfileCard = ({ user, validate, onSubmitHandler }) => (
 export default function EditProfile() {
   const router = useRouter()
   const { user, setUser, loading } = useUser()
-  
+
   const validate = (values) => {
     const errors = {}
     if (!values.name) errors.name = 'Campo obrigatório.'
@@ -87,7 +87,7 @@ export default function EditProfile() {
     else if (values.newEmail == values.currentEmail) errors.newEmail = 'Campo igual email atual.'
     return errors
   }
-  
+
   const onSubmitHandler = async (values, { resetForm }) => {
     if (user.email != values.currentEmail) return swal('Esse não é o seu email atual.', '', 'warning')
     const res = await fetch('/api/users/me', {
@@ -106,24 +106,24 @@ export default function EditProfile() {
       newEmail: ''
     })
   }
-  
+
   useEffect(() => {
     if (!loading && !user) router.push('/login')
   }, [loading])
-  
+
   if (loading || !user) return (
     <div className="flex justify-center items-center h-screen">
       <MdSync className="text-4xl animate-spin" />
     </div>
   )
-  
+
   return (
     <>
       <Head>
         <title>Editar Perfil</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    
+
       <Header />
       <Container>
         <div className="pt-6 md:pt-3">
