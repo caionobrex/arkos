@@ -33,7 +33,7 @@ const LoginCard = ({ validate, onSubmitHandler, error }) => {
         handleSubmit,
         isSubmitting
       }) => (
-        <div className={`shadow-xl w-full rounded-xl border-2 transition-all duration-500 p-8 md:p-14 ${error && 'border-red-500'}`}>
+        <div className={`shadow-xl w-full rounded-xl border-2 transition-all duration-500 p-8 md:p-14 2xl:w-[32rem] ${error && 'border-red-500'}`}>
           <h1 className="text-center text-3xl font-medium text-gray-800">
             Seja bem-vindo!
           </h1>
@@ -137,7 +137,7 @@ export default function LoginPage() {
           <Image src={LoginPageImg} />
         </div>
       
-        <div className="col flex items-center px-4 md:px-28 lg:px-16 2xl:px-52 w-full py-16">
+        <div className="col flex items-center px-4 md:px-28 lg:px-16 2xl:justify-center w-full py-16">
           <LoginCard
             validate={validate}
             onSubmitHandler={onSubmitHandler}

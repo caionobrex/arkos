@@ -27,7 +27,7 @@ const RegisterCard = ({ validate, onSubmitHandler, error }) => (
       handleSubmit,
       isSubmitting
     }) => (
-      <div className={`shadow-xl w-full rounded-xl border-2 transition-all duration-400 p-8 md:p-14 ${error ? 'border-red-500' : 'border-primary-lighter'}`}>
+      <div className={`shadow-xl w-full rounded-xl border-2 transition-all duration-400 p-8 md:p-14 2xl:w-[40rem] ${error ? 'border-red-500' : 'border-primary-lighter'}`}>
         <h1 className="text-center text-3xl font-medium text-gray-800">Cadastre-se</h1>
         <form className="block mt-10" onSubmit={handleSubmit}>
           <div className="flex flex-col gap-y-6">
@@ -140,7 +140,7 @@ export default function RegisterPage() {
           <Image src={RegisterPageImg} />
         </div>
         
-        <div className="col flex items-center px-4 py-16 md:px-28 lg:p-16 2xl:px-56">
+        <div className="col flex items-center px-4 py-16 md:px-28 lg:p-16 2xl:justify-center">
           <RegisterCard
             validate={validate}
             onSubmitHandler={onSubmitHandler}

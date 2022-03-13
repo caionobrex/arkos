@@ -1,5 +1,4 @@
 import '../styles/globals.css'
-import 'tailwindcss/tailwind.css'
 import { CartProvider } from '../context/cartContext'
 import { UserProvider } from '../context/userContext'
 import { Toaster } from 'react-hot-toast'
